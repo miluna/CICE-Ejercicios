@@ -11,13 +11,13 @@ public class ProblemaMaps {
 
 	public static void main(String[] args) {
 		/*
-		Dados estos dos objetos (mapDeStrings y listaDeStrings):
-		
-		Añadir todos los elementos del "mapDeStrings" a "listaDeStrings" e imprimir el resultado por consola.
-		
-		Crear una nueva lista de String con todos los Caracteres PARSEABLES a Integer que encontremos 
-		en todos los elementos "listaDeStrings". Imprimir cada elemento  por consola.
-		
+		* Dados estos dos objetos (mapDeStrings y listaDeStrings):
+		* 
+		* Añadir todos los elementos del "mapDeStrings" a "listaDeStrings" e imprimir el resultado por consola.
+		* 
+		* Crear una nueva lista de String con todos los Caracteres PARSEABLES a Integer que encontremos 
+		* en todos los elementos "listaDeStrings". Imprimir cada elemento  por consola.
+		*
 		*/
 		Map<String, String> mapDeStrings = new HashMap<>();
 		mapDeStrings.put("item1", "4394ddddddd");
