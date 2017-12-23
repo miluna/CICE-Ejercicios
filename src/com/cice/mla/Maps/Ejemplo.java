@@ -50,11 +50,11 @@ public class Ejemplo {
 		
 		System.out.println("----------------");
 		
-		map.forEach(clave, valor -> (
-			System.out.println("Clave con lambda: " + clave);
-			System.out.println("Valor con lambda: " + valor);
-		);
-		
+//		map.forEach(clave, valor -> (
+//			System.out.println("Clave con lambda: " + clave);
+//			System.out.println("Valor con lambda: " + valor);
+//		);
+//		
 	}
 
 }
