@@ -6,7 +6,5 @@ public class Main {
         double b = Math.pow(a, 2);
 
         System.out.println(b);
-
     }
-
 }

@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static void showMenu() {
-        String[] opciones = {"1. Nuevo precio", "2. Precio medio", "3. Precio maximo", "4. Precio minimo", "5. Mostrar los precios", "6. Salir"}
+        String[] opciones = {"1. Nuevo precio", "2. Precio medio", "3. Precio maximo", "4. Precio minimo", "5. Mostrar los precios", "6. Salir"};
 
         System.out.println("------- MENU ---------");
         System.out.println("Elige una opción");
@@ -50,7 +50,7 @@ public class Main {
                 System.out.println(getMinimo());
                 return opcionElegida;
             case 5:
-                System.out.println(showTodosPrecios(););
+                System.out.println(showTodosPrecios());
                 return opcionElegida;
             case 6:
                 System.out.println("Gracias por utilizarme");
