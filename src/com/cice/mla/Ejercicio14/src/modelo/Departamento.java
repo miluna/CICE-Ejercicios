@@ -3,21 +3,27 @@ import java.util.ArrayList;
 
 public class Departamento {
 	private Empleado director;
-	private ArrayList<Empleado> listaEmpleados = new ArrayList<>();
+	private ArrayList<Empleado> listaEmpleados;
 	private String nombre;
 	private String ubicacion;
 	private int telefono;
 	
-	public Departamento(){}
+	public Departamento(){
+		director = new Empleado();
+		listaEmpleados = new ArrayList<>();
+
+	}
 	
 	public Departamento(Empleado director, ArrayList<Empleado> listaEmpleados, String nombre, String ubicacion,
-			int telefono) {
+			int telefono, Empleado director, ArrayList<Empleado> listaEmpleados) {
 		super();
 		this.director = director;
 		this.listaEmpleados = listaEmpleados;
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
 		this.telefono = telefono;
+		this.director = director;
+		this.listaEmpleados = listaEmpleados;
 	}
 
 
