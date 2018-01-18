@@ -15,7 +15,7 @@ public class EmpresaServicio {
 	public void showMenu(){
 		Scanner sc = new Scanner(System.in);
 		int opcion = 0;
-		
+
 		do {
 			System.out.println("Bienvenido a esta app");
 			System.out.println("Elige tu opcion:");
@@ -27,12 +27,12 @@ public class EmpresaServicio {
 			System.out.println("6. Mostrar empleados de un departamento");
 			System.out.println("7. Mostrar director de un departamento");
 			System.out.println("0. Salir");
-			
+
 			opcion = sc.nextInt();
 			controles(opcion);
 		} while (opcion != 0);
 	}
-	
+
 	private void controles(int opcionSeleccionada) {
 		switch (opcionSeleccionada) {
 			case 0:
@@ -67,14 +67,14 @@ public class EmpresaServicio {
 	private void crearEmpleado() {
 		Scanner sc = new Scanner(System.in);
 		Empleado empleado = new Empleado();
-		
+
 		System.out.println("Introduce el nombre: ");
 		empleado.setNombre(sc.next());
-		
+
 		System.out.println("Introduce el apellido: ");
 		empleado.setApellido(sc.next());
-		
-		listaDeEmpleados.add(empleado);		
+
+		listaDeEmpleados.add(empleado);
 	}
 	private void crearDepartamento() {
 		String respuesta = "";
@@ -84,51 +84,57 @@ public class EmpresaServicio {
 			System.out.println("Introduce el nombre: ");
 			departamento.setNombre(sc.next());
 			listaDeDepartamentos.add(departamento);
-			
+
 			System.out.println("¿Quieres añadir otro departamento? (s/n)");
 			respuesta = sc.next();
 		} while (respuesta.equals("s"));
 	}
 	private void asignarDirector() {
-        Scanner sc = new Scanner(System.in);
-        int departamentoElegido = 0;
-        int empleadoElegido = 0;
+		Scanner sc = new Scanner(System.in);
+		int departamentoElegido = 0;
+		int empleadoElegido = 0;
 
-        mostrarDepartamentos();
-        System.out.println("Elige un departamento: ");
-        departamentoElegido = sc.nextInt();
-        Departamento departamentoSeleccionado = listaDeDepartamentos.get(departamentoElegido);
-        ArrayList listaDeEmpleadosDepartamentoSeleccionado = departamentoSeleccionado.getListaEmpleados();
+		mostrarDepartamentos();
+		System.out.println("Elige un departamento: ");
+		departamentoElegido = sc.nextInt();
+		Departamento departamentoSeleccionado = listaDeDepartamentos.get(departamentoElegido);
 
-        if (listaDeEmpleadosDepartamentoSeleccionado.size() > 0) {
-            mostrarEmpleadosDepartamento(departamentoSeleccionado);
-            System.out.println("Elige un director: ");
-            empleadoElegido = sc.nextInt();
-
-            Empleado directorElegido = (Empleado) listaDeEmpleadosDepartamentoSeleccionado.get(empleadoElegido);
-
-            departamentoSeleccionado.setDirector(directorElegido);
-        } else {
-            System.out.println("El departamento seleccionado no tiene empleados, añadelos primero");
-        }
+		System.out.println("Elige un director: ");
+		empleadoElegido = sc.nextInt();
+		Empleado directorSeleccionado = listaDeEmpleados.get(empleadoElegido);
+		departamentoSeleccionado.setDirector(directorSeleccionado);
 	}
 	private void asignarDepartamento() {
-        Scanner sc = new Scanner(System.in);
-        int departamentoElegido;
-        int[] empleadosElegidos;
-        mostrarDepartamentos();
+		Scanner sc = new Scanner(System.in);
+		int departamentoElegido;
+		int[] empleadosElegidos;
+		mostrarDepartamentos();
 
-        System.out.println("Elige un departamento: ");
-        departamentoElegido = Integer.parseInt(sc.nextLine());
-        Departamento departamentoSeleccionado = listaDeDepartamentos.get(departamentoElegido);
+		System.out.println("Elige un departamento: ");
+		departamentoElegido = Integer.parseInt(sc.nextLine());
+		Departamento departamentoSeleccionado = listaDeDepartamentos.get(departamentoElegido);
 
-        System.out.println("Empleados disponibles: ");
-        mostrarEmpleados();
-        System.out.println("Selecciona 1 o varios empleados (separados por coma): ");
-        empleadosElegidos = Arrays.stream(sc.nextLine().split(",")).mapToInt(Integer::parseInt).toArray();
+		System.out.println("Empleados disponibles: ");
+		mostrarEmpleados();
+		System.out.println("Selecciona 1 o varios empleados (separados por coma): ");
 
-        departamentoSeleccionado.setListaEmpleados();
+		String[] aux = sc.nextLine().split(",");
+		empleadosElegidos = new int[aux.length];
 
+		for (int i = 0; i < aux.length; i++) {
+			empleadosElegidos[i] = Integer.parseInt(aux[i]);
+		}
+
+		for (int idEmpleado :
+				empleadosElegidos) {
+			Empleado empleado = listaDeEmpleados.get(idEmpleado);
+			departamentoSeleccionado.getListaEmpleados().add(empleado);
+		}
+		System.out.println("Empleados añadidos:");
+		for (Empleado emp :
+				departamentoSeleccionado.getListaEmpleados()) {
+			System.out.println(emp.getNombre());
+		}
 
 	}
 	private void mostrarEmpleados() {
@@ -140,9 +146,6 @@ public class EmpresaServicio {
 		for (Departamento departamento : listaDeDepartamentos) {
 			System.out.println(listaDeDepartamentos.indexOf(departamento) + " - " + departamento.getNombre());
 		}
-	}
-	private void mostrarEmpleadosDepartamento(Departamento dep){
-        System.out.println(dep.getListaEmpleados();
 	}
 	private void mostrarDirector(){
 		String Nombredirector;
@@ -156,7 +159,7 @@ public class EmpresaServicio {
 		}
 		System.out.println("Introduce el nombre del director: ");
 		String Nombredirector = sc.next();
-		
+
 		for (Departamento departamento : listaDeDepartamentos) {
 			Empleado director = departamento.getDirector();
 			if (director.getNombre() == Nombredirector){
