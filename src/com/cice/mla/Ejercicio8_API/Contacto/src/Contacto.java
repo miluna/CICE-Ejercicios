@@ -3,33 +3,33 @@ import java.util.Hashtable;
 
 public class Contacto {
     private String nombre;
-    private int dni;
+    private String dni;
 
     public Contacto () {
         this.nombre = "";
-        this.dni = 0;
+        setDni(0);
     }
 
     public Contacto(String nombre) {
         this.nombre = nombre;
-        this.dni = 0;
+        setDni(0);
     }
 
     public Contacto(int dni) {
         this.nombre = "";
-        this.dni = dni;
+        setDni(dni);
     }
 
     public Contacto(String nombre, int dni) {
         this.nombre = nombre;
-        this.dni = dni;
+        setDni(dni);
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
@@ -38,6 +38,31 @@ public class Contacto {
     }
 
     public void setDni(int dni) {
-        this.dni = dni;
+
+        this.dni = fixDniLength(dni);
+    }
+
+    private String fixDniLength(int dni){
+        String str = Integer.toString(dni);
+        int length = str.length(); // length should be 8
+        int cerosNecesarios = 8 - length;
+        StringBuilder string = new StringBuilder();
+
+        if (length > 8){
+            for(int i = 0; i < 8; i++) {
+                string.append(str.charAt(i));
+            }
+            return string.toString();
+
+        }
+        if (cerosNecesarios == 0){
+            return str;
+        }else {
+            for(int i = 0; i < cerosNecesarios; i++){
+                string.append("0");
+            }
+            string.append (str);
+            return string.toString();
+        }
     }
 }

@@ -78,7 +78,7 @@ public class AppContactos {
             if (isParsable(datoIntroducido)){
                 int dni = Integer.parseInt(datoIntroducido);
                 for (Contacto c: listaContactos) {
-                    if (c.getDni() == dni){
+                    if (Integer.parseInt(c.getDni()) == dni){
                         contactoSeleccionado = c;
                     }
                 }
