@@ -1,34 +1,30 @@
 package com.mla.Clases;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public abstract class AbstractMaterial implements IMaterial{
 
-    Date fechaDePublicacion;
-    String nombre;
-    boolean isPrestado;
+    protected String fechaDePublicacion;
+    protected String nombre;
+    protected boolean isPrestado;
 
     public AbstractMaterial() {
     }
 
-    public AbstractMaterial(String fecha, String nombre, boolean isPrestado) throws ParseException {
-        setFechaPublicacion(fecha);
+    public AbstractMaterial(String fecha, String nombre, boolean isPrestado) {
+        this.fechaDePublicacion = fecha;
         this.nombre = nombre;
         this.isPrestado = isPrestado;
     }
 
     @Override
-    public void setFechaPublicacion(String fecha) throws ParseException {
-        SimpleDateFormat parser = new SimpleDateFormat("dd/MM/yyyy");
-        Date date = parser.parse(fecha);
-        this.fechaDePublicacion = date;
+    public void setFechaPublicacion(String fecha){
+        this.fechaDePublicacion = fecha;
     }
 
 
     @Override
-    public Date getFechaPublicacion() {
+    public String getFechaPublicacion() {
         return this.fechaDePublicacion;
     }
 
@@ -47,11 +43,24 @@ public abstract class AbstractMaterial implements IMaterial{
         return this.isPrestado;
     }
 
-    protected void prestar(){
-        this.isPrestado = true;
+    @Override
+    public boolean isPrestable() throws NotImplementedException {
+        throw new NotImplementedException();
     }
 
-    protected void devolver(){
+    @Override
+    public void prestar() {
+        try{
+            if (this.isPrestable()){
+                this.isPrestado = true;
+            }
+        } catch (NotImplementedException e){
+            System.out.println("Objeto no prestable");;
+        }
+    }
+
+    @Override
+    public void devolver() {
         this.isPrestado = false;
     }
 }

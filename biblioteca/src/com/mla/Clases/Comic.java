@@ -1,5 +1,7 @@
 package com.mla.Clases;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.text.ParseException;
 
 public class Comic extends AbstractMaterial{
@@ -36,4 +38,5 @@ public class Comic extends AbstractMaterial{
     public void setColeccion(String coleccion) {
         this.coleccion = coleccion;
     }
+
 }

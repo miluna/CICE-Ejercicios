@@ -1,12 +1,14 @@
 package com.mla.Clases;
 
 import com.mla.Enums.EnumFormatos;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.text.ParseException;
 
-public class Disco extends Multimedia {
+public class Disco extends Multimedia{
     private int numeroDiscos;
     private boolean isEdicionEspecial;
+
 
     public Disco() {
     }
@@ -47,4 +49,8 @@ public class Disco extends Multimedia {
         isEdicionEspecial = edicionEspecial;
     }
 
+    @Override
+    public boolean isPrestable() throws NotImplementedException {
+        return true;
+    }
 }

@@ -1,23 +1,15 @@
 package com.mla.Clases;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.text.ParseException;
 
-public class Libro extends AbstractMaterial {
+public class Libro extends AbstractMaterial{
     private String isbn;
     private String autor;
 
     public Libro() {
-    }
-
-    public Libro(String isbn, String autor) {
-        this.isbn = isbn;
-        this.autor = autor;
-    }
-
-    public Libro(String fecha, String nombre, boolean isPrestado, String isbn, String autor) throws ParseException {
-        super(fecha, nombre, isPrestado);
-        this.isbn = isbn;
-        autor = autor;
+        super();
     }
 
     public String getIsbn() {
@@ -34,5 +26,10 @@ public class Libro extends AbstractMaterial {
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+
+    @Override
+    public boolean isPrestable() throws NotImplementedException {
+        return true;
     }
 }

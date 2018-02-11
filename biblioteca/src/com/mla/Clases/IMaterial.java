@@ -1,18 +1,24 @@
 package com.mla.Clases;
 
-import java.text.ParseException;
-import java.util.Date;
+
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public interface IMaterial {
 
-    void setFechaPublicacion(String fecha)throws ParseException;
+    void setFechaPublicacion(String fecha);
 
-    Date getFechaPublicacion();
+    String getFechaPublicacion();
 
     void setNombre(String nombre);
 
     String getNombre ();
 
     boolean isPrestado();
+
+    boolean isPrestable() throws NotImplementedException;
+
+    void prestar();
+
+    void devolver();
 
 }

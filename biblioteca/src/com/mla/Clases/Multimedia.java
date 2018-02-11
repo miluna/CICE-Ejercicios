@@ -4,7 +4,7 @@ import com.mla.Enums.EnumFormatos;
 
 import java.text.ParseException;
 
-public class Multimedia extends AbstractMaterial {
+abstract class Multimedia extends AbstractMaterial {
     private EnumFormatos formato;
     private double duracion;
 
