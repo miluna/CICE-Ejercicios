@@ -12,6 +12,12 @@ public class Producto implements IProducto{
     public Producto() {
     }
 
+    public Producto(EnumCategorias categoria, String nombre){
+        this.categoria = categoria;
+        this.nombre = nombre;
+        setCodigo(generarCodigoProducto(generarBaseCodigoProducto(categoria)));
+    }
+
     public Producto(String codigo, String nombre, EnumCategorias categoria, Long stockage) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -23,7 +29,7 @@ public class Producto implements IProducto{
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    private void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
@@ -59,8 +65,8 @@ public class Producto implements IProducto{
      * @param baseCodigoProducto -> por ejemplo 8_001
      * @return
      */
-    protected String generarCodigoProducto(String baseCodigoProducto) {
-        StringBuilder codigofinal = new StringBuilder();
+    private String generarCodigoProducto(String baseCodigoProducto) {
+        StringBuilder codigofinal = new StringBuilder(baseCodigoProducto);
 
         String datos[] = baseCodigoProducto.split("_");
 
@@ -69,15 +75,14 @@ public class Producto implements IProducto{
         if (codigoIntermedio.length() > 2){
             codigoIntermedio = String.valueOf(codigoIntermedio.chars().map(Character::getNumericValue).sum());
         }
-
+        codigofinal.append("_");
         codigofinal.append(codigoIntermedio);
-
-        codigofinal.append(String.valueOf(Math.floor(Math.random() * 100)));
+        codigofinal.append(String.valueOf(Math.round(Math.random() * 100)));
 
         return codigofinal.toString();
     }
 
-    protected String generarBaseCodigoProducto(EnumCategorias categoria) {
+    private String generarBaseCodigoProducto(EnumCategorias categoria) {
         String baseCodigoProducto = null;
 
         baseCodigoProducto = categoria.getCodigoPais().concat("_").concat(categoria.getBaseCodigo());

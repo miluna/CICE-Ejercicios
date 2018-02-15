@@ -4,10 +4,7 @@ import com.cice.logica.enums.EnumCategorias;
 
 public class Fruta extends Producto {
 
-    public Fruta(EnumCategorias categoria) {
-        setCategoria(categoria);
-
+    public Fruta(EnumCategorias categoria, String nombre) {
+        super(categoria, nombre);
     }
-
-
 }
