@@ -1,0 +1,6 @@
+{
+  "idCurso": 1,
+  "nombreCurso": "Master Java",
+  "centro": "Povedilla",
+  "categoria": "Programación"
+}
