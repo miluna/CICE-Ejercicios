@@ -4,9 +4,10 @@ package com.cice.db;
     Clase encargada de generar el acceso y uso de la base de datos
  */
 
+
+import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.RowSetProvider;
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class DbManager {
 
@@ -17,6 +18,7 @@ public class DbManager {
     private final String PASS;
     private final String DATABASE;
     private Connection conn;
+    private Statement statement;
 
     public DbManager(){
         this.DRIVER = "com.mysql.jdbc.Driver";
@@ -24,7 +26,7 @@ public class DbManager {
         this.PUERTO = "8889";
         this.USER = "root";
         this.PASS = "root";
-        this.DATABASE = "prueba";
+        this.DATABASE = "test1";
     }
 
     public DbManager(String DRIVER, String HOST, String PUERTO, String USER, String PASS, String DATABASE) {
@@ -85,24 +87,63 @@ public class DbManager {
         return esDesconectado;
     }
 
-    public Map<String,String> getFromDB(String sql){
+    public CachedRowSet select (String sql){
+        CachedRowSet cachedRowSet = null;
+        ResultSet rs = null;
         conectarBaseDatos();
 
-        Map<String, String> map = new HashMap<String, String>();
         try{
-            ResultSet rs = conn.createStatement().executeQuery(sql);
-            ResultSetMetaData rsmd = rs.getMetaData();
-
-            int numeroColumnas = rsmd.getColumnCount();
-
-            for (int i = 0; i<numeroColumnas; i++){
-                map.put(rsmd.getColumnName(i), rs.getString(i));
-                //String dato = rs.getString(i);
-            }
-
+            statement = conn.createStatement();
+            rs = statement.executeQuery(sql);
+            cachedRowSet = RowSetProvider.newFactory().createCachedRowSet();
+            cachedRowSet.populate(rs);
         }catch (SQLException e){
             e.printStackTrace();
+        } finally {
+            try {
+                statement.close();
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
-        return map;
+        desconectarBaseDatos();
+        return cachedRowSet;
+    }
+
+    public void insert(String sql){
+        conectarBaseDatos();
+        try {
+                statement = conn.createStatement();
+                statement.execute(sql);
+                statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        desconectarBaseDatos();
+    }
+
+    public void update(String sql){
+        conectarBaseDatos();
+        try{
+            statement = conn.createStatement();
+            statement.executeUpdate(sql);
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        desconectarBaseDatos();
+    }
+
+    public void delete(String sql){
+        conectarBaseDatos();
+        try{
+            statement = conn.createStatement();
+            statement.execute(sql);
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        desconectarBaseDatos();
     }
 }

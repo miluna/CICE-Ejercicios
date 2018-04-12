@@ -24,7 +24,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dbManager" target="1.5" />
+      <module name="dbManager" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
