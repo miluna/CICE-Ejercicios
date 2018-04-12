@@ -24,12 +24,18 @@ public class App {
             //4º especificamos la peticion
 
             //String sql = "CREATE TABLE prueba (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(30) NOT NULL, PRIMARY KEY (id))";
-            //String sql = "INSERT INTO prueba (nombre) VALUES ('lukiluk')";
+            //statement.execute(sql);
+
+
+            String sql = "INSERT INTO prueba (nombre) VALUES ('lukiluk')";
+            for (int i = 0; i<100; i++){
+                statement.execute(sql);
+            }
             //String sql = "UPDATE prueba SET nombre = 'lucas' WHERE id = 3";
-            String sql = "DELETE FROM test1.prueba WHERE id = 2";
+            //String sql = "DELETE FROM test1.prueba WHERE id = 2";
 
             //5º ejecutar la sentencia con executeUpdate o executeQuery si es un SELECT
-            statement.executeUpdate(sql);
+
             //statement.executeQuery(sql);
 
             //6º cerrar conexion

@@ -5,9 +5,10 @@ package com.cice.db;
  */
 
 import java.sql.*;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-public class DbManager <T> {
+public class DbManager {
 
     private final String DRIVER;
     private final String HOST;
@@ -84,9 +85,10 @@ public class DbManager <T> {
         return esDesconectado;
     }
 
-    public List<T> getFromDB(String sql){
+    public Map<String,String> getFromDB(String sql){
         conectarBaseDatos();
 
+        Map<String, String> map = new HashMap<String, String>();
         try{
             ResultSet rs = conn.createStatement().executeQuery(sql);
             ResultSetMetaData rsmd = rs.getMetaData();
@@ -94,11 +96,13 @@ public class DbManager <T> {
             int numeroColumnas = rsmd.getColumnCount();
 
             for (int i = 0; i<numeroColumnas; i++){
-                String dato = rs.getString(i);
+                map.put(rsmd.getColumnName(i), rs.getString(i));
+                //String dato = rs.getString(i);
             }
 
         }catch (SQLException e){
             e.printStackTrace();
         }
+        return map;
     }
 }
