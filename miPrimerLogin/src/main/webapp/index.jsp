@@ -7,27 +7,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
     <body>
-        <div class="row">
-                <h2>Hello ma nigga</h2>
+        <div class="container">
+                <h2 class="center-align blue">Hello ma nigga</h2>
+                <form method="POST" action="ServicioLogin">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="text" name="username" type="text" class="validate">
+                                    <label for="text">User Name</label>
+                                </div>
+                            </div>
+                            </br>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" name="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            </br>
+                            <div class="row">
+                                <div class="col s12 offset-s6">
+                                    <button class="btn waves-effect waves-light center-align blue" type="submit" name="enviar">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
         </div>
-        <form method="POST" action="ServicioLogin">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="text" type="text" class="validate">
-                    <label for="text">User Name</label>
-                </div>
-            </div>
-            </br>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                </div>
-            </div>
-            </br>
-                <button class="btn waves-effect waves-light" type="submit" name="enviar">Enviar
-                <i class="material-icons right">send</i>
-                </button>
-        </form>
     </body>
 </html>

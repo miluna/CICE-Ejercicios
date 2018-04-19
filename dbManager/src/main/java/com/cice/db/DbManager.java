@@ -111,24 +111,12 @@ public class DbManager {
         return cachedRowSet;
     }
 
-    public void insert(String sql){
+    public void insertUpdateErase(String sql){
         conectarBaseDatos();
         try {
                 statement = conn.createStatement();
-                statement.execute(sql);
+                statement.executeUpdate(sql);
                 statement.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        desconectarBaseDatos();
-    }
-
-    public void update(String sql){
-        conectarBaseDatos();
-        try{
-            statement = conn.createStatement();
-            statement.executeUpdate(sql);
-            statement.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
