@@ -8,28 +8,28 @@
 
     <body>
         <div class="container">
-                <h2 class="center-align blue">Hello ma nigga</h2>
-                <form method="POST" action="ServicioLogin">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="text" name="username" type="text" class="validate">
-                                    <label for="text">User Name</label>
-                                </div>
-                            </div>
-                            </br>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="password" name="password" type="password" class="validate">
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-                            </br>
-                            <div class="row">
-                                <div class="col s12 offset-s6">
-                                    <button class="btn waves-effect waves-light center-align blue" type="submit" name="enviar">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
+            <h2 class="center-align blue">Hello ma nigga</h2>
+            <form method="POST" action="ServicioLogin">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="text" name="username" type="text" class="validate">
+                        <label for="text">User Name</label>
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col s12 offset-s6">
+                        <button class="btn waves-effect waves-light center-align blue" type="submit" name="enviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
 </html>

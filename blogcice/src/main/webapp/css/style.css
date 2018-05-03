@@ -1,0 +1,25 @@
+.navbar-wrapper {
+  margin-top: 1rem;
+}
+
+.marketing{
+  text-align: center;
+}
+
+.rounded-image {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  background-color: #333;
+}
+
+.cuadrado{
+  margin: auto;
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  height: 500px;
+  background-color: #333;
+}

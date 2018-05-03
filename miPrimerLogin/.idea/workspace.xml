@@ -38,45 +38,29 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="480">
+              <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServicioLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServicioLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cice/servlet/ServicioLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="269">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#544#587#1" expanded="true" />
-                <element signature="e#596#639#1" expanded="true" />
-                <element signature="e#649#687#1" expanded="true" />
-                <element signature="e#670#686#0" expanded="true" />
-                <element signature="e#932#1032#1" expanded="true" />
-                <element signature="e#945#1031#0" expanded="true" />
-                <element signature="e#945#1031#0" expanded="true" />
-                <element signature="e#945#1031#0" expanded="true" />
-                <element signature="e#945#1031#0" expanded="true" />
-                <element signature="e#1111#1210#1" expanded="true" />
-                <element signature="e#1223#1268#1" expanded="true" />
-                <element signature="e#1396#1439#1" expanded="true" />
-                <element signature="e#1452#1646#0" expanded="true" />
-                <element signature="e#1452#1646#0" expanded="true" />
-                <element signature="e#1767#1856#0" expanded="true" />
-                <element signature="e#1767#1856#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -137,23 +121,13 @@
           <item name="miPrimerLogin Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="miPrimerLogin Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="miPrimerLogin Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="729" />
-    <option name="y" value="232" />
+    <option name="x" value="499" />
+    <option name="y" value="142" />
     <option name="width" value="1699" />
     <option name="height" value="1121" />
   </component>
@@ -173,6 +147,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -234,33 +209,10 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="miPrimerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="miPrimerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="dbManager-1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="miPrimerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="dbManager-1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="dbManager-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miPrimerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="dbManager-1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="dbManager-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,14 +359,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="729" y="232" width="1699" height="1121" extended-state="0" />
+    <frame x="499" y="142" width="1699" height="1121" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27545616" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27519614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -431,10 +383,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28884652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28884652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20776927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20760411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -469,6 +421,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cice/servlet/ServicioLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
@@ -489,22 +475,6 @@
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#544#587#1" expanded="true" />
-            <element signature="e#596#639#1" expanded="true" />
-            <element signature="e#649#687#1" expanded="true" />
-            <element signature="e#670#686#0" expanded="true" />
-            <element signature="e#932#1032#1" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#1111#1210#1" expanded="true" />
-            <element signature="e#1223#1268#1" expanded="true" />
-            <element signature="e#1396#1439#1" expanded="true" />
-            <element signature="e#1452#1646#0" expanded="true" />
-            <element signature="e#1452#1646#0" expanded="true" />
-            <element signature="e#1767#1856#0" expanded="true" />
-            <element signature="e#1767#1856#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,14 +493,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -538,42 +515,18 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cice/servlet/ServicioLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="269">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#544#587#1" expanded="true" />
-            <element signature="e#596#639#1" expanded="true" />
-            <element signature="e#649#687#1" expanded="true" />
-            <element signature="e#670#686#0" expanded="true" />
-            <element signature="e#932#1032#1" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#945#1031#0" expanded="true" />
-            <element signature="e#1111#1210#1" expanded="true" />
-            <element signature="e#1223#1268#1" expanded="true" />
-            <element signature="e#1396#1439#1" expanded="true" />
-            <element signature="e#1452#1646#0" expanded="true" />
-            <element signature="e#1452#1646#0" expanded="true" />
-            <element signature="e#1767#1856#0" expanded="true" />
-            <element signature="e#1767#1856#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
