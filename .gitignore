@@ -6,3 +6,8 @@ RemoteSystemsTempFiles/
 \.recommenders/
 /jsptest/WebApplication1/nbproject/private/
 /jsptest/WebApplication1/build/
+/practicaServlets/practicaServlets/nbproject/private/
+/practicaServlets/practicaServlets/build/
+\.DS_Store
+
+blogcice/mysql-connector-java-5\.1\.46\.jar
