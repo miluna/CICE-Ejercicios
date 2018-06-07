@@ -11,3 +11,5 @@ RemoteSystemsTempFiles/
 \.DS_Store
 
 blogcice/mysql-connector-java-5\.1\.46\.jar
+/practicaServlets/build/
+/practicaServlets/nbproject/private/

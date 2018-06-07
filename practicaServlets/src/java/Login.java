@@ -92,22 +92,17 @@ public class Login extends HttpServlet {
         String pass = request.getParameter("password");
 
         PrintWriter writer = response.getWriter();
-        // HACER UN REGISTRO EN DB
-        //String sql = "INSERT INTO usuarios VALUES (null, '" + user +"', '" + pass + "')";
-
         String sql = "SELECT * FROM usuarios WHERE username = ? AND password = ?";
 
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:8889/blog_cice", "root", "root");
             PreparedStatement statement = conn.prepareStatement(sql);
-
-            //para hacer registro
-            //statement.executeUpdate(sql);
-
-
-            //para hacer un login
-            ResultSet rs = statement.executeQuery(sql);
+            
+            statement.setString(1, user);
+            statement.setString(2, pass);
+            ResultSet rs = statement.executeQuery();
+            
             if (rs.first()){
                 // tenemos coincidencia
                 writer.print("Welcome madafaka");
