@@ -90,6 +90,7 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         String user = request.getParameter("username");
         String pass = request.getParameter("password");
+        String securizedPassword = Securizer.securizePassword(pass);
 
         PrintWriter writer = response.getWriter();
         String sql = "SELECT * FROM usuarios WHERE username = ? AND password = ?";
@@ -100,7 +101,7 @@ public class Login extends HttpServlet {
             PreparedStatement statement = conn.prepareStatement(sql);
             
             statement.setString(1, user);
-            statement.setString(2, pass);
+            statement.setString(2, securizedPassword);
             ResultSet rs = statement.executeQuery();
             
             if (rs.first()){

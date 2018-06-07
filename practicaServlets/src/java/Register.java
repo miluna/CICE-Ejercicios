@@ -74,12 +74,14 @@ public class Register extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         
+        
         String user = request.getParameter("username");
         String pass = request.getParameter("password");
         String email = request.getParameter("email");
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");
+        
+        String securedPassword = Securizer.securizePassword(pass);
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
