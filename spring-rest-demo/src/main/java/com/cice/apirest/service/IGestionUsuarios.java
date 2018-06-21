@@ -6,7 +6,7 @@ public interface IGestionUsuarios {
 
     List<String> listaNombre();
 
-    boolean crearUsuario(String nombre);
+    boolean crearUsuario(String nombre, String surname);
 
     boolean actualizarUsuario(String nombre);
 

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
+import javax.xml.ws.Response;
 import java.util.List;
 
 
@@ -24,7 +25,8 @@ public class UserResource {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String crearUsuario(@PathParam(value = "nombre") String nombre) {
-        return "Hola " + nombre;
+    public void crearUsuario(@PathParam(value = "nombre") String nombre,
+                             @PathParam(value = "surname") String surname) {
+        gestionUsuarios.crearUsuario(nombre, surname);
     }
 }

@@ -1,7 +1,9 @@
 package com.cice.apirest.repository;
 
 import com.cice.apirest.entity.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-//extends JPARepository<Usuario, String>
-public interface UsuarioRepository {
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 }
