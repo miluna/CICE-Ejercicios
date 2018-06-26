@@ -32,7 +32,12 @@ public class GestionUsuarioService implements IGestionUsuarios {
 
     @Override
     public boolean actualizarUsuario(String nombre) {
-        return false;
+
+        //        Usuario user = usuarioRepository.fin();
+//        System.out.println("USUARIO NOMBRE ORIGINAL:" + user.getName());
+//        user.setName(nombre);
+//        System.out.println("USUARIO NUEVO NOMBRE:" + user.getName());
+        return true;
     }
 
     @Override
