@@ -14,3 +14,7 @@ blogcice/mysql-connector-java-5\.1\.46\.jar
 /practicaServlets/build/
 /practicaServlets/nbproject/private/
 spring-config-server/\.mvn/wrapper/maven-wrapper\.jar
+
+eureka-server/\.mvn/wrapper/maven-wrapper\.jar
+
+microservicio/\.mvn/wrapper/maven-wrapper\.jar

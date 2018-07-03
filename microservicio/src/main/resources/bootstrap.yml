@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microservicio
+
+  cloud:
+    config:
+      fail-fast: true
+      enabled: true
+      uri: http://localhost:8888
