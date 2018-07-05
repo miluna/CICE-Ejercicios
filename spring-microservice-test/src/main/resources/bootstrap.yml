@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "microservicio-1"
+  cloud:
+    config:
+      fail-fast: true
+      enabled: true
+      uri: "http://localhost:8888"
+
+#APACHE
+server:
+  port: 8060

@@ -1,0 +1,14 @@
+#REFRESH_SCOPE CONFIG
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#EUREKA
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:8761/eureka/"
