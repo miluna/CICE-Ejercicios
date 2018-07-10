@@ -1,0 +1,4 @@
+[submodule "spring-feign-client"]
+	url = https://github.com/ggamco/spring-feign-client
+[submodule "spring-microservicio-client"]
+	url = https://github.com/ggamco/spring-microservicio-client
